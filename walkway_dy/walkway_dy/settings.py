@@ -25,7 +25,9 @@ SECRET_KEY = '%c(41p(8&tm_%jr_4keq_yz#p8xt33o13%qi!(2_2zmi9_!g3j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'dyLee.pythonanywhere.com'
+]
 
 
 # Application definition
@@ -40,7 +42,9 @@ INSTALLED_APPS = [
 ]
 
 INSTALLED_APPS += [
-    'walkway_dy',
+    'rest_framework',
+    'maps',
+    # 'mapwidgets',
 ]
 
 MIDDLEWARE = [
@@ -118,7 +122,20 @@ USE_L10N = True
 USE_TZ = True
 
 
+
+# MAP_WIDGETS = {
+#     "GooglePointFieldWidget": (
+#         ("zoom", 15),
+#         ("mapCenterLocationName", "london"),
+#         ("GooglePlaceAutocompleteOptions", {'componentRestrictions': {'country': 'uk'}
+#     }),
+#         ("markerFitZoom", 12),
+#     ),
+#     "GOOGLE_MAP_API_KEY": "<google-api-key>"
+# }
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
