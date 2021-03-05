@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산책로를 추천 해 드려요</title>
+
+    <link rel="icon" href="./img/favpng_map-icon-vector-format.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+</head>
+<body>
+<div class="body-container">
+    <h1 class="title">🚩 산책로를 추천 해 드려요</h1>
+    <div class="btn-wrap">
+        <button class="btn-recommend">🏃‍♀️ 현재위치 기반 추천 💨</button>
+    </div>
+    <div class="show-map hide">
+        <div class="marker-info">
+            <div class="users-info">
+                <img src="./img/red-dot.png" alt="">
+                <p>현재 당신의 위치</p>
+            </div>
+            <div class="recomends-info">
+                <img src="./img/blue-dot.png" alt="">
+                <p>추천 산책로</p>
+            </div>
+
+        </div>
+        <div id="recommend-map" style="width:100%; height: 500px;"></div>
+        <ul class="recommend-list">
+            <li>여기에는 추천 산책로 목록이 있어요</li>
+            <li>여기에는 추천 산책로 목록이 있어요</li>
+            <li>여기에는 추천 산책로 목록이 있어요</li>
+        </ul>
+    </div>
+    
+    <div class="js-weather"></div>
+    
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg"
+    async defer></script>
+    <script src="./geolocation.js"></script>
+</div>
+</body>
+</html>
